@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.types import *
-from database.ia_filterdb import col, sec_col, get_file_details, unpack_new_file_id, get_bad_files
+from database.ia_filterdb import *
 
 @Client.on_message(filters.command("cleandb") & filters.user(1029462448))
 async def clean_database(client, message: Message):
